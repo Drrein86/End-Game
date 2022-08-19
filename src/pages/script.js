@@ -34,11 +34,11 @@ function Script({ handleClick }) {
 
   return (
     <div>
-   
+      {scriptForm && (
         <div><BoxContainer><FormContainer>
           <h1>דף ההזמנה שלכם</h1>
-          <h6>זה הזמן לצאת המקופסא</h6>
-          <h4>הודעת פתיחה</h4>
+          <h4>זה הזמן לצאת</h4>
+          <h3>הודעת פתיחה</h3>
           <input
            name="msg"
            type={"text"}
@@ -111,7 +111,7 @@ name="adress"
           </button>{" "}
       
           </FormContainer></BoxContainer></div>
-     
+      )}
      </div>
   );
 }

@@ -46,24 +46,23 @@ function App() {
   };
 
 
-  
+
   return (
     <div className="App">
       <Navbar handleClick={handleClick} />
 
       {renderMennager.stats && <Stats handleClick={handleClick} />}
-      {renderMennager.contects && <Contects  handleClick={handleClick} />
+      {renderMennager.contects && <Contects handleClick={handleClick} />
       }
       {renderMennager.script && <Script handleClick={handleClick} />}
-      {renderMennager.plan && <Plan  handleClick={handleClick} />}
-      {renderMennager.loginForm && <LoginForm  handleClick={handleClick} />}
-      {renderMennager.signupForm && <SignupForm  handleClick={handleClick} />}
+      {renderMennager.plan && <Plan handleClick={handleClick} />}
 
-      <AppContainer>
-      <AccountBox />
-    </AppContainer>
+
+      {renderMennager.loginForm && <AppContainer>
+        <AccountBox handleClick={handleClick} />
+      </AppContainer>}
     </div>
-    
+
   );
 }
 

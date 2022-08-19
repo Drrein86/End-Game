@@ -26,7 +26,7 @@ const Navbar = (props) => {
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
       <Nav>
-        <GlobalStyle></GlobalStyle>
+      <GlobalStyle/>
         <NavbarContainer>
         <HeaderSection handleMenuClick={handleMenuClick}
             submited={submited}
@@ -34,11 +34,12 @@ const Navbar = (props) => {
             
           <NavMenu onClick={handleMenuClick} click={click}>
             {buttonsToShow}
-          {/* //  <Button to="./loginForm" name="loginForm" onClick={props.handleMenuClick}>התחברות/הרשמה</Button> */}
+            <Button to="./loginForm" name="loginForm" onClick={props.handleClick}>התחברות/הרשמה</Button> 
    
 
           </NavMenu>
         </NavbarContainer>
+        
       </Nav>
     </IconContext.Provider>
   );
